@@ -1,129 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Mollie MO pack 1</title>
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
-<style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mollie MO pack 1</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+  <style>
     body {
-        background-color: white;
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: white;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
+
     .container {
-        padding: 20px;
-        flex: 1;
+      max-width: 600px;
+      width: 100%;
+      padding: 20px;
+      text-align: center;
     }
-    img {
-        max-width: 90%;
-        height: auto;
-        margin-top: 30px;
-        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+
+    .preview {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      margin-bottom: 20px;
     }
-    .button {
-        display: inline-block;
-        background-color: red;
-        color: white;
-        font-weight: bold;
-        padding: 15px 30px;
-        margin-top: 30px;
-        font-size: 18px;
-        text-decoration: none;
-        border-radius: 8px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-        transition: transform 0.1s ease, box-shadow 0.2s ease;
+
+    .title {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 10px;
     }
-    .button:active {
-        transform: scale(0.96);
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+
+    .description {
+      font-size: 16px;
+      margin-bottom: 30px;
     }
+
+    .warning {
+      color: hotpink;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .buy-button {
+      background-color: crimson;
+      color: white;
+      padding: 14px 28px;
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-bottom: 40px;
+    }
+
     .links {
-        padding: 30px 0;
-        display: flex;
-        justify-content: center;
-        gap: 16px;
-        flex-wrap: wrap;
-        flex-shrink: 0;
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      font-size: 14px;
     }
+
     .links a {
-        background-color: #000;
-        color: white;
-        padding: 12px 24px;
-        border-radius: 6px;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 16px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-        white-space: nowrap;
-        transition: background-color 0.3s ease, transform 0.1s ease;
+      text-decoration: none;
+      color: #555;
+      transition: color 0.3s ease;
     }
+
     .links a:hover {
-        background-color: #222;
+      color: crimson;
     }
-    .links a:active {
-        transform: scale(0.95);
-    }
-    .age-warning {
-        color: red;
-        font-size: 14px;
-        margin-top: 50px;
-        padding-bottom: 30px;
-    }
-
-    @media (max-width: 600px) {
-        .button {
-            padding: 12px 24px;
-            font-size: 16px;
-        }
-        .links {
-            flex-direction: column;
-            align-items: center;
-        }
-        .links a {
-            width: 80%;
-            font-size: 15px;
-            padding: 14px 0;
-        }
-        img {
-            max-width: 95%;
-        }
-    }
-
-    [data-aos] {
-        opacity: 0;
-        transition-property: opacity, transform;
-        transition-duration: 1s;
-    }
-</style>
+  </style>
 </head>
 <body>
-<div class="container" data-aos="fade-down">
-    <h2>Welcome! Here you will find exclusive Mollie content.</h2>
-</div>
-<div class="container" data-aos="zoom-in-up">
-    <h1>Mollie MO pack 1</h1>
-    <img alt="Preview Image" src="preview.jpg"/>
-    <div class="age-warning" data-aos="fade-up">18+ content</div>
-    <a class="button" href="https://nonexistent-site.com" data-aos="zoom-in">💸 $7.99 – Buy Now</a>
-</div>
-<div class="links" data-aos="fade-up">
-    <a href="https://twitter.com">Twitter</a>
-    <a href="https://instagram.com">Instagram</a>
-    <a href="https://pixiv.net">Pixiv</a>
-</div>
+  <div class="container" data-aos="fade-up" data-aos-once="false">
+    <h1 class="title">Mollie MO pack 1</h1>
+    <img src="preview.jpg" alt="Preview" class="preview" data-aos="zoom-in" data-aos-once="false"/>
+    <p class="description" data-aos="fade-up" data-aos-once="false">
+      Эксклюзивный приватный пак контента Mollie MO — доступен только здесь. Уникальные фото и видео. Моментальная выдача после оплаты.
+    </p>
+    <button class="buy-button" data-aos="zoom-in" data-aos-once="false">Купить за $7.99</button>
+    <p class="warning" data-aos="fade-in" data-aos-once="false">
+      Этот контент не предназначен для лиц младше 18 лет. Все модели достигли совершеннолетия.
+    </p>
+    <div class="links" data-aos="fade-up" data-aos-once="false">
+      <a href="https://twitter.com" target="_blank">Twitter</a>
+      <a href="https://instagram.com" target="_blank">Instagram</a>
+      <a href="https://t.me" target="_blank">Telegram</a>
+      <a href="https://onlyfans.com" target="_blank">OnlyFans</a>
+    </div>
+  </div>
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
     AOS.init({
-        duration: 1000,
-        once: true
+      once: false
     });
-</script>
+  </script>
 </body>
 </html>
